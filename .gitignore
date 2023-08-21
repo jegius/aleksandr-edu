@@ -1,0 +1,49 @@
+# Генерируемые файлы
+dist
+build
+storybook-static
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Директории, используемые другими инструментами, такими как `jest`
+/.cache
+/jest
+
+# .env файлы с переменными окружения
+.env
+.env.*.local
+
+# Директории Dependecy
+node_modules
+bower_components
+
+# Редакторы
+*.sw*
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Сборщики модуей, tsc
+*.eslintcache
+*.tscache
+ts-command.tsbuildinfo
+
+# Системы TypeScript type type
+typings/
+
+# Опциональный npm-kash
+.npm
+/.cache/
+/.idea/
