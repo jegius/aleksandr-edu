@@ -1,43 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 
 .root {
-  --grey: #495263;
+  --darkgrey: #495263;
   --purple: #864BD8;
   --darkblue: #28344A;
-  --white: #FFF9F8
+  --white: #FFF9F8;
+  --lightgrey: #c5c5c5;
+  --lightblack: #333;
+
+  --logo: url("/css/image/header/logo.svg");
+  --vector_1: url("/css/image/header/Vector_1.svg");
+  --doodle-4_1: url("css/image/header/doodle-4_1.png");
+
+
 
 }
 html{
   font-size: 16px;
 }
 
-/* Reset styles for the entire page */
 body {
   font-family: 'Inter', sans-serif;
-  color: var(--grey);
+  color: var(--darkgrey);
   margin: 0;
   padding: 0;
   border: none;
-  font-size: 1rem  /* 16/16 */;
+  font-size: 1rem;
 
 }
 
-/* Reset styles for the header */
+
 .header {
   background-color: transparent;
-  padding: 1.25rem  /* 20/16 */;
-  border-bottom: 0.0625rem  /* 1/16 */ solid #ddd;
+  padding: 1.25rem;
+  border-bottom: 0.0625rem solid #ddd;
 }
 
-/* Reset styles for the logo */
+
 .header__logo {
   display: inline-block;
-  height: 2.5rem  /* 40/16 */;
-  margin-right: 0.625rem  /* 10/16 */;
+  height: 2.5rem;
+  margin-right: 0.625rem;
   vertical-align: middle;
 }
 
-/* Reset styles for the navigation */
 .nav {
   list-style: none;
   margin: 0;
@@ -47,72 +53,48 @@ body {
 }
 
 .nav__item {
-  margin-right: 1.25rem  /* 20/16 */;
+  margin-right: 1.25rem;
 }
 
 .nav a {
-  color: var(--grey);
+  color: var(--darkgrey);
   text-decoration: none;
 }
 
 .nav a:hover {
-  color: #c5c5c5;
+  color: var(--lightgrey);
 }
 
-/* Reset styles for the dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  border: 0.0625rem  /* 1/16 */ solid #ccc;
-  box-shadow: 0  /* 0/16 */ 0  /* 0/16 */ 0.625rem  /* 10/16 */ rgba(0,0,0,0.2);
-  padding: 0.625rem  /* 10/16 */;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Reset styles for the button */
 .button {
-  background-color: #333;
-  color: white;
+  background-color: var(--lightblack);
+  color: var(--white);
   border: none;
-  padding: 0.625rem  /* 10/16 */ 1.25rem  /* 20/16 */;
-  font-size: 1rem  /* 16/16 */;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #c5c5c5;
+  background-color: var(--lightgrey);
 }
 
-/* Reset styles for the input fields */
 .header__contact-button {
-  background-color: #333;
-  color: white;
+  background-color: var(--lightblack);
+  color: var(--white);
   border: none;
-  padding: 0.625rem  /* 10/16 */ 1.25rem  /* 20/16 */;
-  font-size: 1rem  /* 16/16 */;
+  padding: 0.625rem 1.25rem;
+  font-size: 1rem;
   cursor: pointer;
-  border-radius: 0.3125rem  /* 5/16 */;
+  border-radius: 0.3125rem;
 }
 
 .header__contact-button:hover {
-  background-color: #c5c5c5;
+  background-color: var(--lightgrey);
 }
 
-/* Reset styles for the section */
 section {
-  margin-top: 1.25rem  /* 20/16 */;
+  margin-top: 1.25rem;
 }
-
 
 ._with-padding {
   padding: 0 10rem;
@@ -132,7 +114,7 @@ section {
 }
 
 .logo a::before{
-  content: url("/css/image/header/logo.svg");
+  content: var(--logo);
   width: 6.4131rem;
   height: 2.0038rem;
   vertical-align: middle;
@@ -154,18 +136,16 @@ section {
   box-shadow: 0 0 1rem var(--purple);
 }
 
-
 .nav {
   list-style: none;
   display: flex;
 
 }
 
-
 .cart__header {
   font-weight: 700;
-  font-size: 4.375rem  /* 70/16 */;
-  line-height: 5rem  /* 80/16 */;
+  font-size: 4.375rem;
+  line-height: 5rem;
   vertical-align: center;
   horiz-align: center;
 }
@@ -173,16 +153,16 @@ section {
 .nav__item {
   padding: 2rem 0.5rem;
   margin: 0 0.5rem;
-  color: var(--grey);
+  color: var(--darkgrey);
   border-bottom: .1rem solid rgba(0, 0, 0, 0);
 }
 
 .nav__item a::after {
-  content: url("/css/image/header/Vector 1.svg");
-  width: 0.375rem /* 6/16 */;
-  height: 0.1875rem /* 3/16 */;
-  top: 4.8125rem  /* 77/16 */;
-  left: 39.75rem  /* 636/16 */;
+  content: var(--vector_1);
+  width: 0.375rem;
+  height: 0.1875rem;
+  top: 4.8125rem;
+  left: 39.75rem;
   vertical-align: middle;
   horiz-align: center;
 
@@ -193,20 +173,18 @@ section {
 
 .block {
   background-color: var(--white);
-  background: url("css/image/header/doodle-4 1.png");
+  background: var(--doodle-4_1);
   background-repeat: no-repeat;
 }
 
 .cart {
-  max-width: 44.625rem  /* 714/16 */;
-  max-height: 10rem  /* 160/16 */;
-  top: 10.9375rem  /* 175/16 */;
-  left: 22.6875rem  /* 363/16 */;
+  max-width: 44.625rem;
+  max-height: 10rem;
 }
 
 .cart__text {
-  font-size: 1.125rem  /* 18/16 */;
-  line-height: 1.75rem  /* 28/16 */;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   vertical-align: center;
   horiz-align: center;
   font-weight: 400;
