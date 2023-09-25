@@ -13,7 +13,6 @@
   --doodle-4_1: url("css/image/header/doodle-4_1.png");
 
 
-
 }
 html{
   font-size: 16px;
@@ -29,11 +28,10 @@ body {
 
 }
 
-
 .header {
   background-color: transparent;
   padding: 1.25rem;
-  border-bottom: 0.0625rem solid #ddd;
+  border-bottom: 0.0625rem solid var(--lightgrey);
 }
 
 
@@ -63,6 +61,7 @@ body {
 
 .nav a:hover {
   color: var(--lightgrey);
+
 }
 
 .button {
@@ -79,9 +78,9 @@ body {
 }
 
 .header__contact-button {
-  background-color: var(--lightblack);
-  color: var(--white);
-  border: none;
+  background-color: transparent;
+  color: var(--purple);
+  border: 0.0625rem solid;
   padding: 0.625rem 1.25rem;
   font-size: 1rem;
   cursor: pointer;
@@ -91,7 +90,6 @@ body {
 .header__contact-button:hover {
   background-color: var(--lightgrey);
 }
-
 section {
   margin-top: 1.25rem;
 }
@@ -122,8 +120,9 @@ section {
 
 .header__contact-button {
   color: var(--purple);
-  background-color: var(--white);
+  background-color: transparent;
   padding: 1.5rem 2.5rem;
+  border: 0.0625rem solid;
   border-radius: 10rem;
   cursor: pointer;
   box-shadow: 0 0 0 0;
@@ -175,13 +174,17 @@ section {
   background-color: var(--white);
   background: var(--doodle-4_1);
   background-repeat: no-repeat;
+
 }
 
 .cart {
   max-width: 44.625rem;
   max-height: 10rem;
 }
+.logo {
+  background-image: var(--doodle-4_1)
 
+}
 .cart__text {
   font-size: 1.125rem;
   line-height: 1.75rem;
