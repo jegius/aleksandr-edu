@@ -7,16 +7,27 @@
   --white: #FFF9F8;
   --lightgrey: #c5c5c5;
   --lightblack: #333;
+  --black: #000;
 
   --logo: url("/css/image/header/logo.svg");
   --vector_1: url("/css/image/header/Vector_1.svg");
-  --doodle-4_1: url("css/image/header/doodle-4_1.png");
-
-
+  --doodle-4-1: url("css/image/header/doodle-4-1.png");
 }
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+}
+
 html{
   font-size: 16px;
 }
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -34,8 +45,7 @@ body {
   border-bottom: 0.0625rem solid var(--lightgrey);
 }
 
-
-.header__logo {
+.logo {
   display: inline-block;
   height: 2.5rem;
   margin-right: 0.625rem;
@@ -65,8 +75,8 @@ body {
 }
 
 .button {
-  background-color: var(--lightblack);
-  color: var(--white);
+  background-color: transparent;
+  color: var(--purple);
   border: none;
   padding: 0.625rem 1.25rem;
   font-size: 1rem;
@@ -75,6 +85,10 @@ body {
 
 .button:hover {
   background-color: var(--lightgrey);
+}
+
+.header__nav {
+  text-decoration: none;
 }
 
 .header__contact-button {
@@ -153,7 +167,7 @@ section {
   padding: 2rem 0.5rem;
   margin: 0 0.5rem;
   color: var(--darkgrey);
-  border-bottom: .1rem solid rgba(0, 0, 0, 0);
+  border-bottom: .1rem solid var(--black);
 }
 
 .nav__item a::after {
@@ -167,12 +181,11 @@ section {
 
 }
 .nav__item_active {
-  border-bottom: .1rem solid rgba(0, 0, 0, 1);
+  border-bottom: .1rem solid var(--lightblack);
 }
 
 .block {
   background-color: var(--white);
-  background: var(--doodle-4_1);
   background-repeat: no-repeat;
 
 }
@@ -180,9 +193,13 @@ section {
 .cart {
   max-width: 44.625rem;
   max-height: 10rem;
+
 }
-.logo {
-  background-image: var(--doodle-4_1)
+
+.cart__header>img {
+  max-width: 6.625rem;
+  max-height: 6.625rem;
+
 
 }
 .cart__text {
